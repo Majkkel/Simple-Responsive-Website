@@ -1,0 +1,191 @@
+html,body {
+  margin: 0px;
+  height: 100%;
+  padding: 0;
+  min-height: 100%;
+  overflow: auto;
+}
+body{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+main{
+  padding: 5px;
+  background-color: #f2f2f2;
+}
+
+h1,h2,h3 {
+    font-family: 'Young Serif', serif;
+}
+
+
+p {
+    font-family: 'Roboto Slab', serif;
+}
+
+nav {
+    background-color: #333;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 10px;
+}
+
+nav li {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+nav a{
+  float: left;
+  width: 50px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #355;
+  font-family: 'Tomorrow', serif;
+}
+
+nav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+nav a.active {
+    background-color: #04AA6D;
+    color: #f2f2f2;
+  }
+
+aside {
+    background-color: #666;
+    padding: 10px;
+    max-width: 300px;
+    font-family: 'Tomorrow', serif;
+    padding-right: 10px;
+   
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+aside li{
+    display: list-item;
+    list-style: none;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+aside a{
+
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+aside a:hover{
+    background-color: #ddd;
+  color: black;
+}
+
+aside a.active {
+    background-color: #04AA6D;
+    color: #f2f2f2;
+  }
+  
+img {
+  overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.zdj2, .zdj1 {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+.kontener{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+footer{
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #666;
+  color: #f2f2f2;
+  border-top: 1px solid black;
+}
+footer p, footer a{
+  margin: auto;
+}
+
+table{
+  font-family: 'Tomorrow', serif;
+  color: #f2f2f2;
+  border-radius: 10px;
+}
+.ciemno{
+  background-color: #333;
+}
+.jasno{
+  background-color: #355;;
+}
+.konar{
+  padding: 10px;
+  border: solid #333;
+  border-radius: 10px;
+  margin-top: 35px;
+
+}
+
+td{
+  padding: 5px;
+}
+
+@media screen and (max-width: 426px) {
+  .kontener{
+    flex-flow: column nowrap;
+    
+  }
+  aside{
+    max-width: 100%;
+    
+  }
+  .zdj2, .zdj1{
+    width: 80%;
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+header p{
+  text-align: center;
+  font-family: 'Tomorrow', serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 20px;
+}
+
+header{
+  background-color: #355;
+  color: #f2f2f2 ;
+  width: 100%
+}
+
+@media print{
+  header,nav,aside{
+    display: none;
+  }
+}
+html{
+  background-color: #355;
+}
+
+ol{
+  font-family: 'Roboto Slab', serif;
+}
+
